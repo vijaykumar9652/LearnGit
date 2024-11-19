@@ -1,0 +1,62 @@
+WebDriver methods
+1)public void get(String url);
+	driver.get("String url");
+2)public void close();
+	driver.close();
+3)public void quit();
+	driver.quit();
+4)public String getTitle();
+	driver.getTitle();
+5)public String getCurrentUrl();
+	driver.getCurrentUrl();
+6)public String getPageSource();
+	driver.getPageSource();
+7)public String getWindowHandle();
+	driver.getWindowHandle();
+8)public String getWindowHandles();
+	driver.getWindowHandles();
+9)public Navigation navigate();
+	public void back();
+		driver.navigate.back();
+	public void forward();
+		driver.navigate.forward();
+	public void refresh();
+		driver.navigate.refresh();
+	public void to(String url);
+		driver.navigate.to("String url");
+	public void to(URL url);
+		URL url=new URL("String url");
+		driver.navigate.to(url);
+10)public options manage();
+	public void maximize();
+		driver.manage().window().maximize();
+	public void minimize();
+		driver.manage().window().manimize();
+	public void fullScreen();
+		driver.manage().window().fullScreen();
+	public void getSize();
+		driver.manage().window().getSize();
+	public void getPosition();
+		driver.manage().window().getPosition();
+	public void setSize();
+		driver.manage().window().setSize(new Dimension(1000,500));
+	public void setPosition();
+		driver.manage().window().setPosition(new Point(5,5));
+
+=============================================================================================================================
+SearchContext Interface
+1)public WebElement FindElement(By.class obj);
+	WebElement ref=driver.findElement(By.class obj);
+2)public WebElement FindElements(By.class obj);
+	WebElement ref=driver.findElements(By.class obj);
+=============================================================================================================================
+Locators
+1)By.id();
+2)By.Name();
+3)By.className();
+4)By.linkTest();
+5)By.partialLink();
+6)By.cssSelector();
+7)By.Xpath();
+8)By.tagName();
+===========================================================================================================================
